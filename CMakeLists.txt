@@ -57,11 +57,11 @@ add_definitions(
 add_executable(playground 
 	playground/playground.cpp
 	playground/playground.h
-	playground/SimpleFragmentShader.fragmentshader
-	playground/SimpleVertexShader.vertexshader
+		cmake-build-debug/SimpleFragmentShader.fragmentshader
+		cmake-build-debug/SimpleVertexShader.vertexshader
 	common/shader.cpp
 	common/shader.hpp
-)
+		)
 target_link_libraries(playground
 	${ALL_LIBS}
 )
